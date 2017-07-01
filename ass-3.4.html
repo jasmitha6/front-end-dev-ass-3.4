@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+     <meta charset="utf-8">
+	 <title>signup form</title>
+    <style>
+	 /*formaat of the form */
+       form {
+          position: absolute;
+          left: 150px;
+          top: 110px;
+		  right:150px;
+          color:darkviolet;
+		  max-height: 100px;
+	}	
+	   h1{
+		 position: absolute;
+         left: 100px;
+         top: 45px;
+         color:darkviolet;
+	}
+	
+	/* Full-width input fields */
+	   input[type=text], input[type=password], input[type=number] ,input[type=Email]{
+         width: 100%;
+	     height: 100%;
+         padding: 12px 20px;
+         margin: 8px 0;
+         display: inline-block;
+         border: 1px solid #ccc;
+         box-sizing: border-box;
+	     opacity: 0.5;
+	}
+	
+/* Set a style for all buttons */
+       button {
+         background-color: rebeccapurple;
+         color: white;
+         padding: 14px 20px;
+         margin: 8px 0;
+         border: none;
+         cursor: pointer;
+         width: 100%;
+	     opacity: 0.5;
+}
+
+/* Extra styles for the cancel button */
+     .cancelbtn {
+        padding: 14px 20px;
+        background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+    .cancelbtn,.signupbtn {
+        float: left;
+        width: 50%;
+}
+
+/* Add padding to container elements */
+     .container {
+	      background: url("http://www.ncld.org/wp-content/uploads/2016/04/personalized_learning.jpg");
+	      background-attachment: absolute;
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          padding: 16px;
+}
+	
+
+/* Clear floats */
+	.clearfix::after {
+         content: normal;
+         clear: both;
+         display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+    @media screen and (max-width: 300px) {
+         .cancelbtn, .signupbtn {
+            width: 100%;
+    }
+}
+    </style>
+ </head>
+	
+ <body>
+<!--content in form-->
+    <h1><centre>Signup Form</centre></h1>
+    <form action="/action_page.php" style="border:1px solid #ccc">
+    <div class="container">
+	    <label><b>User Name</b></label>
+        <input type="text" placeholder="Enter User name" name="User_Name" enabled  >
+	    <label><b>User Name</b></label>
+        <input type="text" placeholder="INDIA" name="Country_Name" disabled  >
+	    <label><b>Phone Number</b></label>
+        <input type="number" placeholder="Enter Phone number" name="Phone_Number" 
+			   maxlength="10" size="30" min="1111111111" max="9999999999">
+        <label><b>Email</b></label>
+		<input type="Email" placeholder="Enter Email" name="email" maxlength="100" size="30" recquired >
+        <label><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+        <label><b>Repeat Password</b></label>
+        <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+        <input type="checkbox" checked="checked"> Remember me
+        <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+															  
+    <div class="clearfix">
+       <button type="button" class="cancelbtn">Cancel</button>
+       <button type="button" class="signupbtn">Sign Up</button>
+    </div>
+  </div>
+</form>
+</body>
+</html>
